@@ -5,10 +5,12 @@
 <description>一档闲聊漫画的播客</description>
 <language>zh-cn</language>
 <category>podcast</category>
+<atom:link href="https://lytoooo0.github.io/podcasts/index.html" rel="self" type="application/rss+xml" />
 <item>
 <title>开篇辞</title>
-<link>https://lytoooo0.github.io/podcasts/index.html</link>
+<link>https://lytoooo0.github.io/podcasts/ep0/index.html</link>
 <description>试播集</description>
+<guid>https://lytoooo0.github.io/podcasts/ep0/index.html</guid>
 </item>
 </channel>
 </rss>
