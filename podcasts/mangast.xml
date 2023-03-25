@@ -10,7 +10,7 @@
 <description>一档闲聊漫画的播客</description>
 <language>zh-cn</language>
 <category>podcast</category>
-<itunes:image url="https://lytoooo0.github.io/podcasts/images/cover.png"/>
+<itunes:image href="https://lytoooo0.github.io/podcasts/images/cover.png"/>
 <itunes:category text="Leisure"><itunes:category text="Animation &amp; Manga"/></itunes:category>
 <itunes:explicit>False</itunes:explicit>
 <itunes:author>lytoooo0</itunes:author>
