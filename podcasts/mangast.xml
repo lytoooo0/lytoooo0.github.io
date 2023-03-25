@@ -5,11 +5,20 @@
 <description>一档闲聊漫画的播客</description>
 <language>zh-cn</language>
 <category>podcast</category>
+<itunes:image>https://lytoooo0.github.io/podcasts/images/cover.png</itunes:image>
+<itunes:category text="Leisure"><itunes:category text="Animation &amp; Manga"/></itunes:category>
+<itunes:explicit>False</itunes:explicit>
+<itunes:author>lytoooo0</itunes:author>
 <item>
 <title>开篇辞</title>
 <link>https://lytoooo0.github.io/podcasts/ep0/index.html</link>
 <description>试播集</description>
 <guid>https://lytoooo0.github.io/podcasts/ep0/index.html</guid>
+<enclosure
+    url="https://lytoooo0.github.io/podcasts/ep0/ep0.mp3"
+    length="290786"
+    type="audio/mpeg"
+/>
 </item>
 </channel>
 </rss>
