@@ -6,27 +6,38 @@
 >
 <channel>
 <title>漫画播</title>
-<link>https://lytoooo0.github.io/podcasts/index.html</link>
+<link>https://lytoooo0.github.io/podcasts/</link>
 <description>一档闲聊漫画的播客</description>
 <language>zh-cn</language>
-<category>podcast</category>
 <copyright>Copyright 2023 lytoooo0</copyright>
+<category>podcast</category>
 <pubDate>Sat, 25 Mar 2023 22:44:10 CET</pubDate>
 <itunes:image href="https://lytoooo0.github.io/podcasts/images/cover.png"/>
-<itunes:category text="Leisure"><itunes:category text="Animation &amp; Manga"/></itunes:category>
-<itunes:explicit>False</itunes:explicit>
+<itunes:category text="Leisure">
+    <itunes:category text="Animation &amp; Manga"/>
+</itunes:category>
+<itunes:explicit>false</itunes:explicit>
 <itunes:author>lytoooo0</itunes:author>
+<itunes:type>episodic</itunes:type>
 <itunes:owner>
     <itunes:name>lytoooo0</itunes:name>
     <itunes:email>lytoooo0@icloud.com</itunes:email>
 </itunes:owner>
 
 <item>
-<title>开篇辞</title>
-<link>https://lytoooo0.github.io/podcasts/ep0/index.html</link>
-<description>试播集</description>
+<itunes:episode>1</itunes:episode>
+<itunes:episodeType>trailer</itunes:episodeType>
+<title>开场白</title>
+<link>https://lytoooo0.github.io/podcasts/ep0/</link>
+<description>
+<![CDATA[
+试播集，主要用于测试。
+<a href="https://lytoooo0.github.io/podcasts/ep0/">本集链接</a>.
+]]>
+</description>
 <pubDate>Sat, 25 Mar 2023 22:44:10 CET</pubDate>
-<guid>https://lytoooo0.github.io/podcasts/ep0/index.html</guid>
+<guid>https://lytoooo0.github.io/podcasts/ep0/</guid>
+<itunes:explicit>false</itunes:explicit>
 <enclosure
     url="https://lytoooo0.github.io/podcasts/ep0/ep0.mp3"
     length="290786"
