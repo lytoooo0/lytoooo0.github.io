@@ -53,6 +53,17 @@ document.getElementById("generate_but").onclick = function generateEcoding() {
     document.getElementById("result").textContent = result;
 }
 
+document.getElementById("generate_clear_but").onclick = function generateEcoding() {
+    var result = "";
+    for (i = 1; i <= num; i++) {
+        var elmt = document.getElementById("text_"+i.toString());
+        var raw_text = elmt.value;
+        result += bytesToBase64(new TextEncoder().encode(raw_text)) + " ";
+        elmt.value = "";
+    }
+    document.getElementById("result").textContent = result;
+}
+
 document.getElementById("add_but").onclick = function addTextLine() {
     num = num+1;
     drawTextLines();
