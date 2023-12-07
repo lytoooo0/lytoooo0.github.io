@@ -30,11 +30,23 @@ function triggerHide(trigger_element) {
 }
 
 function randomSel() {
-    document.getElementById("display_but_"+getRandomInt(codes.length).toString()).className = "sel_button";
+    var count = 0;
+    var ranum = getRandomInt(codes.length);
+    while (true) {
+        var element = document.getElementById("display_but_"+ranum.toString());
+        if (element.className == "sel_button") {
+            ranum = getRandomInt(codes.length);
+            count++;
+            if (count >= codes.length) return;
+        } else {
+            element.className = "sel_button";
+            break;
+        }
+    }
+    console.log(ranum);
 }
 function getRandomInt(max) {
     var num = Math.floor(Math.random() * max);
-    console.log(num + " " + max);
     return num;
 }
 
