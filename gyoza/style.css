@@ -1,11 +1,14 @@
 html {
     .display_button {
+        width: 250px;
         background-color: white;
     };
     .hidden_button {
+        width: 250px;
         background-color: black;
     }
     .sel_button {
+        width: 250px;
         background-color:darkblue;
         color:white;
     }
