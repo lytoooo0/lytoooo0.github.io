@@ -1,0 +1,12 @@
+html {
+    .display_button {
+        background-color: white;
+    };
+    .hidden_button {
+        background-color: black;
+    }
+    .sel_button {
+        background-color:darkblue;
+        color:white;
+    }
+}
