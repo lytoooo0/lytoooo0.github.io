@@ -13,6 +13,11 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 h1 {
     text-align: center;
@@ -24,9 +29,15 @@ h1 {
     margin-bottom: 15px;
 }
 
-.result {
+.result_hint {
     margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+.result {
+    margin-top: 10px;
     font-weight: bold;
     text-align: center;
+    font-size: 40px;
 }
 

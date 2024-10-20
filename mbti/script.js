@@ -29,6 +29,6 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
         (answers.J > answers.P ? 'J' : 'P');
 
     // Display result
-    result = `Your personality type is: ${personalityType}`;
+    result = `${personalityType}`;
     document.getElementById('result').innerText = result;
 });
