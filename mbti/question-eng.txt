@@ -1,0 +1,83 @@
+E/I:
+1. 
+E. In a lively tavern, you feel energized while chatting with everyone.
+I. When you sit alone by the campfire, enjoying the peaceful night, you feel energized.
+
+2.
+E. In the town square, you long to be the center of attention, sharing your magnificent stories.
+I. You prefer to quietly observe in small gatherings, enjoying that understated mystery.
+
+3.
+E. You are always eager to share the brilliant ideas in your mind with the adventurers around you.
+I. You prefer to slowly reveal your secret plans within a small circle.
+
+4.
+E. When you feel down, you hope your companions can provide you with warm comfort.
+I. You tend to be alone, quietly reflecting and immersing yourself in your own world.
+
+5.
+E. You are always talkative in conversations.
+I. You prefer to listen to others' stories.
+
+S/N:
+6.
+S. You adhere to ancient laws, following wisdom that has stood the test of time.
+N. You pursue sparks of inspiration, yearning to create unprecedented miracles.
+
+7.
+S. You value the truth of reality, like a rigorous warrior, relying on common sense to guide your direction.
+N. You lean towards a world of fantasy, like a sorcerer, exploring unknown possibilities.
+
+8.
+S. You enjoy honing known skills, like a skilled craftsman, meticulously refining your work.
+N. You crave challenges with new things, like an adventurer, bravely stepping into the unknown.
+
+9.
+S. You focus on the present reality, defending the current peace, ensuring everything is in order.
+N. You have a broad vision, looking to the future, anticipating changes ahead, ready to embrace new challenges.
+
+10.
+S. You tell stories in a step-by-step manner, slowly guiding the audience into the plot, creating a tense atmosphere.
+N. Your thoughts leap like lightning, leading others through different ideas, sparking inspiration.
+
+T/F:
+11.
+T. You excel at calmly analyzing problems, like a wise person, pursuing truth.
+F. You consider others' feelings, like a compassionate leader, valuing harmony.
+
+12.
+T. You treat everyone equally, upholding fairness, ensuring everyone is respected.
+F. You place more importance on interpersonal relationships, willing to compromise for harmony, striving to create a warm atmosphere.
+
+13.
+T. You are good at spotting flaws, pursuing perfection, striving for every detail to be impeccable.
+F. You are tolerant of others' shortcomings, offering understanding, and working to create an inclusive environment.
+
+14. 
+T. You hold yourself to high standards, pursuing excellence, ensuring every task meets the criteria.
+F. You value emotions, willing to relax standards for others' feelings, focusing on the team's morale.
+
+15.
+T. You speak frankly, bravely expressing your thoughts without reservation.
+F. You speak tactfully, trying to avoid hurting others, showing delicate care.
+
+J/P:
+16.
+J. You plan adventures methodically, completing tasks before enjoying fun, ensuring everything is foolproof.
+P. You go with the flow, enjoying the fun of the moment, always ready to embrace new challenges.
+
+17.
+J. Once you make a decision, you feel a sense of relief, filled with satisfaction, and move steadily towards your goal.
+P. You feel happy to have many choices, enjoying every possibility, always ready to explore new paths.
+
+18.
+J. You set goals and steadfastly move towards them, vowing to complete your mission, ensuring every step is in the plan.
+P. As new information emerges, you continuously adjust your goals, flexibly responding to changes, like a resourceful adventurer.
+
+19.
+J. You want to understand the environment you will face before the adventure, preparing thoroughly to ensure the team's safety.
+P. You love adventure, willing to explore unknown territories, seeking novel experiences, and enjoying every surprise.
+
+20.
+J. The schedule you set is like an iron rule, unchangeable, ensuring everything is completed on time.
+P. You are happy to adjust agreements and deadlines based on circumstances, ready to respond to changing situations.
