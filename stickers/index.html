@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBTI スタンプ</title>
+    <title>Claws & Quests</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 10px;
+            padding: 20px;
             background-color: #f4f4f4;
+            text-align: center;
         }
         h1 {
             text-align: center;
         }
-        .spacer {
-            height: 70px;
-        }
         .group {
-            margin-bottom: 10px;
+            margin-bottom: 40px;
             border: 1px solid #ccc;
             border-radius: 8px;
-            padding: 10px;
+            padding: 20px;
             background-color: #fff;
         }
         .group h2 {
@@ -35,79 +33,232 @@
         .sticker {
             margin: 10px;
             text-align: center;
+            cursor: pointer;
         }
         .sticker img {
             width: 100px; /* Adjust size as needed */
             height: 100px; /* Adjust size as needed */
             border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+         .sticker img:hover {
+            transform: scale(1.1);
+        }
+
+.modal {
+            display: none; /* 默认隐藏 */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            position: relative;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 80%;
+            max-height: 80%;
+            text-align: center;
+        }
+        .modal-content img {
+            max-width: 100%;
+            max-height: 500px;
+            border-radius: 8px;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #555;
+        }
+        .close-btn:hover {
+            color: red;
         }
     </style>
 </head>
 <body>
 
-    <h1>MBTI スタンプ</h1>
+    <h1>MBTIスタンプコレクション</h1>
 
     <!-- Group 1 -->
     <div class="group">
     <h2>ISTP</h2>
-        <div class="stickers">
-            <div class="sticker"><img src="images/istp_1.PNG" alt="ISTP 1"></div>
-            <div class="sticker"><img src="images/istp_2.PNG" alt="ISTP 2"></div>
-            <div class="sticker"><img src="images/istp_3.PNG" alt="ISTP 3"></div>
-            <div class="sticker"><img src="images/istp_4.PNG" alt="ISTP 4"></div>
+            <div class="stickers">
+            <div class="sticker"><img src="images/istp_1.PNG" alt="ISTP 1"onclick="openModal('images/istp_1.PNG')"></div>
+            <div class="sticker"><img src="images/istp_2.PNG" alt="ISTP 2"onclick="openModal('images/istp_2.PNG')"></div>
+            <div class="sticker"><img src="images/istp_3.PNG" alt="ISTP 3"onclick="openModal('images/istp_3.PNG')"></div>
+            <div class="sticker"><img src="images/istp_4.PNG" alt="ISTP 4"onclick="openModal('images/istp_4.PNG')"></div>
         </div>
-        <div class="spacer"></div> <!-- Spacer -->
+
+
         <h2>ISFP</h2>
         <div class="stickers">
-            <div class="sticker"><img src="images/isfp_1.PNG" alt="ISFP 1"></div>
-            <div class="sticker"><img src="images/isfp_2.PNG" alt="ISFP 2"></div>
-            <div class="sticker"><img src="images/isfp_3.PNG" alt="ISFP 3"></div>
-            <div class="sticker"><img src="images/isfp_4.PNG" alt="ISFP 4"></div>
+            <div class="sticker"><img src="images/isfp_1.PNG" alt="ISFP 1"onclick="openModal('images/isfp_1.PNG')"></div>
+            <div class="sticker"><img src="images/isfp_2.PNG" alt="ISFP 2"onclick="openModal('images/isfp_2.PNG')"></div>
+            <div class="sticker"><img src="images/isfp_3.PNG" alt="ISFP 3"onclick="openModal('images/isfp_3.PNG')"></div>
+            <div class="sticker"><img src="images/isfp_4.PNG" alt="ISFP 4"onclick="openModal('images/isfp_4.PNG')"></div>
         </div>
-        <div class="spacer"></div> <!-- Spacer -->
+
+
         <h2>ESTP</h2>
         <div class="stickers">
-            <div class="sticker"><img src="images/estp_1.PNG" alt="ESTP 1"></div>
-            <div class="sticker"><img src="images/estp_2.PNG" alt="ESTP 2"></div>
-            <div class="sticker"><img src="images/estp_3.PNG" alt="ESTP 3"></div>
-            <div class="sticker"><img src="images/estp_4.PNG" alt="ESTP 4"></div>
+            <div class="sticker"><img src="images/estp_1.PNG" alt="ESTP 1"onclick="openModal('images/estp_1.PNG')"></div>
+            <div class="sticker"><img src="images/estp_2.PNG" alt="ESTP 2"onclick="openModal('images/estp_2.PNG')"></div>
+            <div class="sticker"><img src="images/estp_3.PNG" alt="ESTP 3"onclick="openModal('images/estp_3.PNG')"></div>
+            <div class="sticker"><img src="images/estp_4.PNG" alt="ESTP 4"onclick="openModal('images/estp_4.PNG')"></div>
         </div>
-        <div class="spacer"></div> <!-- Spacer -->
+
+
         <h2>ESFP</h2>
         <div class="stickers">
-            <div class="sticker"><img src="images/esfp_1.PNG" alt="ESFP 1"></div>
-            <div class="sticker"><img src="images/esfp_2.PNG" alt="ESFP 2"></div>
-            <div class="sticker"><img src="images/esfp_3.PNG" alt="ESFP 3"></div>
-            <div class="sticker"><img src="images/esfp_4.PNG" alt="ESFP 4"></div>
+            <div class="sticker"><img src="images/esfp_1.PNG" alt="ESFP 1"onclick="openModal('images/esfp_1.PNG')"></div>
+            <div class="sticker"><img src="images/esfp_2.PNG" alt="ESFP 2"onclick="openModal('images/esfp_2.PNG')"></div>
+            <div class="sticker"><img src="images/esfp_3.PNG" alt="ESFP 3"onclick="openModal('images/esfp_3.PNG')"></div>
+            <div class="sticker"><img src="images/esfp_4.PNG" alt="ESFP 4"onclick="openModal('images/esfp_4.PNG')"></div>
         </div>
-        <div class="spacer"></div> <!-- Spacer -->
+
+
         <h2>INFP</h2>
         <div class="stickers">
-            <div class="sticker"><img src="images/infp_1.PNG" alt="INFP 1"></div>
-            <div class="sticker"><img src="images/infp_2.PNG" alt="INFP 2"></div>
-            <div class="sticker"><img src="images/infp_3.PNG" alt="INFP 3"></div>
-            <div class="sticker"><img src="images/infp_4.PNG" alt="INFP 4"></div>
+            <div class="sticker"><img src="images/infp_1.PNG" alt="INFP 1"onclick="openModal('images/infp_1.PNG')"></div>
+            <div class="sticker"><img src="images/infp_2.PNG" alt="INFP 2"onclick="openModal('images/infp_2.PNG')"></div>
+            <div class="sticker"><img src="images/infp_3.PNG" alt="INFP 3"onclick="openModal('images/infp_3.PNG')"></div>
+            <div class="sticker"><img src="images/infp_4.PNG" alt="INFP 4"onclick="openModal('images/infp_4.PNG')"></div>
         </div>
-        <div class="spacer"></div> <!-- Spacer -->
+
+
         <h2>ENFP</h2>
         <div class="stickers">
-            <div class="sticker"><img src="images/enfp_1.PNG" alt="ENFP 1"></div>
-            <div class="sticker"><img src="images/enfp_2.PNG" alt="ENFP 2"></div>
-            <div class="sticker"><img src="images/enfp_3.PNG" alt="ENFP 3"></div>
-            <div class="sticker"><img src="images/enfp_4.PNG" alt="ENFP 4"></div>
+            <div class="sticker"><img src="images/enfp_1.PNG" alt="ENFP 1"onclick="openModal('images/enfp_1.PNG')"></div>
+            <div class="sticker"><img src="images/enfp_2.PNG" alt="ENFP 2"onclick="openModal('images/enfp_2.PNG')"></div>
+            <div class="sticker"><img src="images/enfp_3.PNG" alt="ENFP 3"onclick="openModal('images/enfp_3.PNG')"></div>
+            <div class="sticker"><img src="images/enfp_4.PNG" alt="ENFP 4"onclick="openModal('images/enfp_4.PNG')"></div>
         </div>
-        <div class="spacer"></div> <!-- Spacer -->
+
+
         <h2>ENFJ</h2>
         <div class="stickers">
-            <div class="sticker"><img src="images/enfj_1.PNG" alt="ENFJ 1"></div>
-            <div class="sticker"><img src="images/enfj_2.PNG" alt="ENFJ 2"></div>
-            <div class="sticker"><img src="images/enfj_3.PNG" alt="ENFJ 3"></div>
-            <div class="sticker"><img src="images/enfj_4.PNG" alt="ENFJ 4"></div>
+            <div class="sticker"><img src="images/enfj_1.PNG" alt="ENFJ 1"onclick="openModal('images/enfj_1.PNG')"></div>
+            <div class="sticker"><img src="images/enfj_2.PNG" alt="ENFJ 2"onclick="openModal('images/enfj_2.PNG')"></div>
+            <div class="sticker"><img src="images/enfj_3.PNG" alt="ENFJ 3"onclick="openModal('images/enfj_3.PNG')"></div>
+            <div class="sticker"><img src="images/enfj_4.PNG" alt="ENFJ 4"onclick="openModal('images/enfj_4.PNG')"></div>
+        </div>
+
+
+        <h2>INFJ</h2>
+        <div class="stickers">
+            <div class="sticker"><img src="images/infj_1.PNG" alt="INFJ 1"onclick="openModal('images/infj_1.PNG')"></div>
+            <div class="sticker"><img src="images/infj_2.PNG" alt="INFJ 2"onclick="openModal('images/infj_2.PNG')"></div>
+            <div class="sticker"><img src="images/infj_3.PNG" alt="INFJ 3"onclick="openModal('images/infj_3.PNG')"></div>
+            <div class="sticker"><img src="images/infj_4.PNG" alt="INFJ 4"onclick="openModal('images/infj_4.PNG')"></div>
+        </div>
+
+
+        <h2>ISFJ</h2>
+        <div class="stickers">
+            <div class="sticker"><img src="images/isfj_1.PNG" alt="ISFJ 1"onclick="openModal('images/isfj_1.PNG')"></div>
+            <div class="sticker"><img src="images/isfj_2.PNG" alt="ISFJ 2"onclick="openModal('images/isfj_2.PNG')"></div>
+            <div class="sticker"><img src="images/isfj_3.PNG" alt="ISFJ 3"onclick="openModal('images/isfj_3.PNG')"></div>
+            <div class="sticker"><img src="images/isfj_4.PNG" alt="ISFJ 4"onclick="openModal('images/isfj_4.PNG')"></div>
+        </div>
+
+
+        <h2>ESTJ</h2>
+        <div class="stickers">
+            <div class="sticker"><img src="images/estj_1.PNG" alt="ESTJ 1"onclick="openModal('images/estj_1.PNG')"></div>
+            <div class="sticker"><img src="images/estj_2.PNG" alt="ESTJ 2"onclick="openModal('images/estj_2.PNG')"></div>
+            <div class="sticker"><img src="images/estj_3.PNG" alt="ESTJ 3"onclick="openModal('images/estj_3.PNG')"></div>
+            <div class="sticker"><img src="images/estj_4.PNG" alt="ESTJ 4"onclick="openModal('images/estj_4.PNG')"></div>
+        </div>
+
+
+        <h2>ESFJ</h2>
+        <div class="stickers">
+            <div class="sticker"><img src="images/esfj_1.PNG" alt="ESFJ 1"onclick="openModal('images/esfj_1.PNG')"></div>
+            <div class="sticker"><img src="images/esfj_2.PNG" alt="ESFJ 2"onclick="openModal('images/esfj_2.PNG')"></div>
+            <div class="sticker"><img src="images/esfj_3.PNG" alt="ESFJ 3"onclick="openModal('images/esfj_3.PNG')"></div>
+            <div class="sticker"><img src="images/esfj_4.PNG" alt="ESFJ 4"onclick="openModal('images/esfj_4.PNG')"></div>
+        </div>
+
+
+        <h2>ISTJ</h2>
+        <div class="stickers">
+            <div class="sticker"><img src="images/istj_1.PNG" alt="ISTJ 1"onclick="openModal('images/istj_1.PNG')"></div>
+            <div class="sticker"><img src="images/istj_2.PNG" alt="ISTJ 2"onclick="openModal('images/istj_2.PNG')"></div>
+            <div class="sticker"><img src="images/istj_3.PNG" alt="ISTJ 3"onclick="openModal('images/istj_3.PNG')"></div>
+            <div class="sticker"><img src="images/istj_4.PNG" alt="ISTJ 4"onclick="openModal('images/istj_4.PNG')"></div>
+        </div>
+
+
+        <h2>INTJ</h2>
+        <div class="stickers">
+            <div class="sticker"><img src="images/intj_1.PNG" alt="INTJ 1"onclick="openModal('images/intj_1.PNG')"></div>
+            <div class="sticker"><img src="images/intj_2.PNG" alt="INTJ 2"onclick="openModal('images/intj_2.PNG')"></div>
+            <div class="sticker"><img src="images/intj_3.PNG" alt="INTJ 3"onclick="openModal('images/intj_3.PNG')"></div>
+            <div class="sticker"><img src="images/intj_4.PNG" alt="INTJ 4"onclick="openModal('images/intj_4.PNG')"></div>
+        </div>
+
+
+        <h2>ENTJ</h2>
+        <div class="stickers">
+            <div class="sticker"><img src="images/entj_1.PNG" alt="ENTJ 1"onclick="openModal('images/entj_1.PNG')"></div>
+            <div class="sticker"><img src="images/entj_2.PNG" alt="ENTJ 2"onclick="openModal('images/entj_2.PNG')"></div>
+            <div class="sticker"><img src="images/entj_3.PNG" alt="ENTJ 3"onclick="openModal('images/entj_3.PNG')"></div>
+            <div class="sticker"><img src="images/entj_4.PNG" alt="ENTJ 4"onclick="openModal('images/entj_4.PNG')"></div>
+        </div>
+
+
+        <h2>INTP</h2>
+        <div class="stickers">
+            <div class="sticker"><img src="images/intp_1.PNG" alt="INTP 1"onclick="openModal('images/intp_1.PNG')"></div>
+            <div class="sticker"><img src="images/intp_2.PNG" alt="INTP 2"onclick="openModal('images/intp_2.PNG')"></div>
+            <div class="sticker"><img src="images/intp_3.PNG" alt="INTP 3"onclick="openModal('images/intp_3.PNG')"></div>
+            <div class="sticker"><img src="images/intp_4.PNG" alt="INTP 4"onclick="openModal('images/intp_4.PNG')"></div>
+        </div>
+
+
+        <h2>ENTP</h2>
+        <div class="stickers">
+            <div class="sticker"><img src="images/entp_1.PNG" alt="ENTP 1"onclick="openModal('images/entp_1.PNG')"></div>
+            <div class="sticker"><img src="images/entp_2.PNG" alt="ENTP 2"onclick="openModal('images/entp_2.PNG')"></div>
+            <div class="sticker"><img src="images/entp_3.PNG" alt="ENTP 3"onclick="openModal('images/entp_3.PNG')"></div>
+            <div class="sticker"><img src="images/entp_4.PNG" alt="ENTP 4"onclick="openModal('images/entp_4.PNG')"></div>
         </div>
     </div>
 
-    <!-- Add more groups here as needed -->
+
+ <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Preview">
+        </div>
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById("modalImage").src = imageSrc; 
+            document.getElementById("imageModal").style.display = "flex"; 
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            let modal = document.getElementById("imageModal");
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
 
 </body>
 </html>
-
